@@ -1,6 +1,10 @@
 ---
+name: happy's blog
 author: doc5
-desc: 分享技术实践，创业历程
+desc: 快乐的博客,一个马农的网络博客
+desc_en: coding, learn, life, happy working everyday!
+encourage: 编程，学习，生活，开心的工作，每一天！
+theme: default
 ---
 <!doctype html>
 <html lang="en">
@@ -11,123 +15,68 @@ desc: 分享技术实践，创业历程
     {% else %}
     <title>{{ page.desc }} - {{ page.author }}</title>
     {% endif %}
-    <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" media="screen" charset="utf-8"/>
-    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/stylesheets/themes/{{ page.theme }}/style.css" type="text/css" media="screen" charset="utf-8"/>
     <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8"/>
-    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" charset="utf-8"/>
+    
     <!--[if IE]><script src="/javascripts/html5.js"></script><![endif]-->
   </head>
   <body>
     <div id="wrapper"><!-- #wrapper -->
 
       <header><!-- header -->
-      <h1><a href="/">{{ page.author }}</a></h1>
+      <h1><a href="/">{{ page.name }}</a></h1>
       <h2><a href="/">{{ page.desc }}</a></h2>
       </header><!-- end of header -->
 
-      <nav><!-- top nav -->
-      <div class="menu">
-        <ul>
-          <li><a href="/">首页</a></li>
-          <li><a href="/blogs.html">文章列表</a></li>
-          <li><a href="/about.html">关于我</a></li>
-          <li><a href="/linux/2011/02/24/my-ubuntu.html">我的Ubuntu</a></li>
-          <li><a href="/linux/2011/03/03/vagrant-virtual-develop-enviroment.html">虚拟化开发环境</a></li>
-          <li><a href="/git/2010/10/25/git-flow.html">版本控制标准流程</a></li>
-        </ul>
-      </div>
+      <nav class="menu"><!-- top nav -->
+          <ul class="clearfix">
+              <li><a href="/">首页</a></li>
+              <li><a href="/blogs.html">文章列表</a></li>
+              <li><a href="/about.html">关于我</a></li>
+          </ul>
       </nav><!-- end of top nav -->
 
-      <section id="main"><!-- #main content and sidebar area -->
-      <div id="content">
-        <article class="articlecontent">
-          {{ content }}
-        </article>
-      </div>
+      <section id="main" class="border-radius"><!-- #main content and sidebar area -->
+          
+          <div id="content" class="border-radius">
+            <article class="articlecontent">
+              {{ content }}
+            </article>
+          </div>
+          
+          <aside>
+            <section class="side border-radius">
+              <p>
+                <a href="http://github.com/doc5">github</a>
+              </p>
+            </section>
 
-      <aside>
-      <section>
-      <p>
-        <a href="http://github.com/doc5">github</a>
-      </p>
-      </section>
+            <section class="side border-radius">
 
-      <section>
-      <!-- Feedsky FEED发布代码开始 -->
-      <!-- FEED自动发现标记开始 -->
-      <link title="RSS 2.0" type="application/rss+xml" href="http://feed.feedsky.com/saberma" rel="alternate" />
-      <!-- FEED自动发现标记结束 -->
+                  <section>
+                  <h3>Categories</h3>
+                  <ul>
+                    {% for category in site.categories %}
+                    <li><a href="/{{category | first}}.html">{{category | first}} ({{category | last | size }})</a></li>
+                    {% endfor %}
+                  </ul>
+                  </section>
+              </section>
 
-      <section>
-      <h3>Categories</h3>
-      <ul>
-        {% for category in site.categories %}
-        <li><a href="/{{category | first}}.html">{{category | first}} ({{category | last | size }})</a></li>
-        {% endfor %}
-      </ul>
-      </section>
-
-      <section>
-      <h3>Sponsors</h3>
-      <a href="http://www.engineyard.com"><img src="/images/sponsor_ey.jpg" alt="Engine Yard" /><a>
-      <a href="http://railskits.com"><img src="/images/sponsor_railskits.gif" alt="ad" /></a>            
-      <a href="http://www.agilealliance.org"><img src="/images/sponsor_agile.jpg" alt="ad" /></a>
-      </section>
-
-      <section>
-      <div id="github-badge">
-      </div>
-      </section>
-      <script type="text/javascript" charset="utf-8">
-      GITHUB_USERNAME = "doc5";
-      </script>
-      <script src="http://drnicjavascript.rubyforge.org/github_badge/dist/github-badge-launcher.js" type="text/javascript"></script>
-
-      </aside>
-
+          </aside>
       </section><!-- end of #main content and sidebar-->
 
       <footer>
-      <section id="footer-area">
+          <section id="footer-area" class="border-radius">
 
-      <section id="footer-outer-block">
-      <aside class="footer-segment">
-      <h4>Friends</h4>
-      <ul>
-        <li><a href="http://happy.doc5.com">happy博客</a></li>
-        <li><a href="http://www.55xiaoyou.com">闪记脑力[iphone益智游戏]</a></li>
-        <li><a href="http://www.sszgclub.com">甩手掌柜[多网店管理]</a></li>        
-      </ul>
-      </aside><!-- end of #first footer segment -->
+              <section id="footer-outer-block">
+                  <aside class="footer-segment">
+                      <h4>Encourage</h4>
+                      <p>{{ page.encourage }}</p>
+                  </aside><!-- end of #fourth footer segment -->
+              </section><!-- end of footer-outer-block -->
 
-      <aside class="footer-segment">
-      <h4>Blogroll</h4>
-      <ul>
-        <li><a href="http://robielee.me">小狼</a></li>
-        <li><a href="http://2simple.cn">2Simple</a></li>
-        <li><a href="http://abitno.me">A Bit? No!!!</a></li>
-        <li><a href="http://daodao.org">盗盗</a></li>
-      </ul>
-      </aside><!-- end of #second footer segment -->
-
-      <aside class="footer-segment">
-      <h4>Coolness</h4>
-      <ul>
-        <li><a href="http://xianguo.com">鲜果</a></li>
-        <li><a href="http://github.com">GitHub</a></li>
-        <li><a href="http://www.pivotaltracker.com">PivotalTracker</a></li>
-        <li><a href="http://chinaonrails.com">ChinaOnRails</a></li>
-      </ul>
-      </aside><!-- end of #third footer segment -->
-
-      <aside class="footer-segment">
-      <h4>Encourage</h4>
-      <p>尝试. 坚持. 分享. 宽容.</p>
-      </aside><!-- end of #fourth footer segment -->
-
-      </section><!-- end of footer-outer-block -->
-
-      </section><!-- end of footer-area -->
+          </section><!-- end of footer-area -->
       </footer>
 
     </div><!-- #wrapper -->
