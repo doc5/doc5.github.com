@@ -1,0 +1,11 @@
+base-url: /
+destination: ./_site
+server: true
+auto: true
+lsi: false
+server_port: 5000
+pygments: true
+markdown: redcloth
+permalink: pretty
+paginate: 10
+plugins: ./_plugins

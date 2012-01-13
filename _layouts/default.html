@@ -1,0 +1,41 @@
+---
+author: happy
+desc: 记录生活的每一天
+theme: default
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        {% if page.title != null %}
+        <title>{{page.title}} | {{ page.desc }} - {{ page.author }}</title>
+        {% else %}
+        <title>{{ page.desc }} - {{ page.author }}</title>
+        {% endif %}
+        <link rel="stylesheet" href="/stylesheets/themes/{{ page.theme }}/style.css" type="text/css" media="screen" charset="utf-8"/>
+        <script src="/javascripts/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div id="header">
+            <a href="{{ site.base-url }}">首页</a>
+        </div>
+
+        <div id="main">
+            <div class="content">
+                {{ content }}
+            </div>
+            <div class="sider">
+                <div class="box">
+                    <h3>Categories</h3>
+                    <ul>
+                        {% for category in site.categories %}
+                        <li><a href="/{{category | first}}/">{{category | first}} ({{category | last | size }})</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
