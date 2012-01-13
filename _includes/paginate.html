@@ -1,6 +1,10 @@
 <div class="paginate">    
 {% if paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}">上一页</a>
+    {% if paginator.page == 2 %}        
+        <a href="/">上一页</a>
+    {% else %}        
+        <a href="/page{{ paginator.previous_page }}">上一页</a>
+    {% endif %}    
 {% endif %}
 
 {% for page in (1..paginator.total_pages) %}
