@@ -1,7 +1,9 @@
----                                                                                                                                                          
+---       
+author: happy                                                                                                                                                   
 layout: post
 title: 应用node.js,redis,resque构建实时项目
 category: rails
+outline: 我对javascript语言还是很喜欢，所以对node.js这么有创意的东西，很早就开始关注了。
 #published: false
 ---
 

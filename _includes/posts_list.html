@@ -1,10 +1,18 @@
-{% if list_style == 'title' %}
-    <ul id="posts">
-      {% for post in posts %}
-      <li>
-        <span>{{post.date | date: "%Y-%m-%d"}}</span>
-        <a href="{{post.url}}">{{post.title}}</a>
-      </li>
-      {% endfor %}
-    </ul>
- {% endif %}
+{% for post in posts %}
+    <div class="post-list">
+         <div class="title">
+             <div class="meta">
+                 {{ post.date | date: "%Y-%m-%d" }}
+                 {{ post.author }}@<a href="/{{post.category}}">{{ post.category | category_name}}</a>
+             </div>
+             <a href="{{ post.url }}">{{ post.title }}</a>
+         </div>    
+
+         <div class="outline">
+             {{ post.outline }}
+         </div>
+        <div class="reader-more">
+            <a href="{{ post.url }}" title="{{ post.title }}">reader more... >></a>
+        </div>
+    </div>    
+{% endfor %}

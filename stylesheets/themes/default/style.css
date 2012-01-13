@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    font-family: 'UbuntuRegular',sans-serif;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2A3B63;
+}
+
+ul {
+    list-style: none outside none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.content-center {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+#header {
+    background: url("images/header-bk.jpg") repeat scroll 0 0 #2A3B63;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;    
+}
+
+#header .menu-bar{
+    
+}
+
+#header, #content, #navigation {
+    overflow: visible;
+    word-wrap: break-word;
+}
+
+#header .logo {
+    
+}
+
+#header .description{
+    margin: 5px;
+}
+
+#header .description h1 a {
+    color: #6D9D30;
+    font-size: 48px;
+    text-decoration: none;
+    text-shadow: 0 2px 3px #777777;
+}
+
+#header .description h2 a{
+    color: #6D9D30;
+}
+
+#header .navigation{
+    background-color: #660000;
+    height: 20px;
+    padding: 8px;
+}
+
+#header .navigation a {
+    border-bottom: 1px dotted #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+#main{
+    margin: 5px auto;
+    padding: 5px;
+    
+    background-color: #EEEEEE;
+    color: #333333;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+/*    font-size: 0.8em;*/
+}
+
+#main .sider {
+    width: 240px;
+    float: right;
+    background: none repeat scroll 0 0 #FFEBE8;
+    overflow: hidden;
+}
+
+#main .sider h3{
+    font-size: 15px;
+}
+
+#main .sider ul {
+    font-size: 12px;
+    padding: 2px;
+}
+
+#main .sider .box {
+    margin: 5px;
+}
+
+#main .content {
+    padding-right: 250px;    
+}
+
+#main .content .post-list{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted gainsboro;
+}
+
+#main .content .post-list .title {
+    font-family: 'Folksolid';
+    font-size: 182%;
+    margin-bottom: 4px;
+/*    text-transform: none;*/
+}
+#main .content .post-list .meta{
+    line-height: 22px;
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+}
+#main .content .post-list .meta a {
+    color: #C34E02;
+}
+
+#main .content .post-list .outline {
+    font-size: 14px;
+}
+
+#main .content .post-list .reader-more{
+    text-align: right;
+}
+#main .content .post-list .reader-more a{
+    color: #C34E02;
+    text-decoration: none;
+}
+a:hover {
+    color: red !important;
+}

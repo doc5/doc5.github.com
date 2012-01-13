@@ -1,5 +1,8 @@
 ---
 layout: default
 ---
-{% assign posts = paginator.posts %}
+{% assign posts = site.posts %}
+
+{% include index_paginate.html %}
 {% include posts_list.html %}
+{% include index_paginate.html %}
