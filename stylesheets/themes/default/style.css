@@ -182,3 +182,11 @@ ul {
 a:hover {
     color: red !important;
 }
+
+pre {
+    font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
+    background-color: #232323;
+    color: #E6E0DB;
+    overflow: auto;
+    padding: 5px;
+}
