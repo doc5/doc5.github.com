@@ -1,0 +1,6 @@
+{% if post.previous %} 
+    <a rel="prev" href="{{ post.previous.url }}">&larr; 上一篇:{{ post.previous.title }}</a>
+{% endif %}
+{% if post.next %} 
+    <a rel="next" href="{{ post.next.url }}">下一篇:{{ post.next.title }} &rarr;</a>
+{% endif %}

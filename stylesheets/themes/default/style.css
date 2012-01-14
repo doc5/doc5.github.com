@@ -152,6 +152,31 @@ ul {
 #main .content .post .body {
     padding: 5px;
     border-bottom: 2px dotted #ccddff;
+    border-top: 2px dotted #ccddff;
+}
+
+#main .content .next-prev{
+    padding: 2px;
+}
+
+#main .content .next-prev a{
+    margin: 0px 5px;
+}
+
+#main .content .related {
+    margin: 5px 2px;
+}
+
+#main .content .related ul {
+    padding: 2px;
+    margin: 0px;
+}
+#main .content .related li{
+    width: 350px;
+    float: left;
+    overflow: hidden;    
+    list-style: square inside none;
+    padding-left: 5px;
 }
 
 a:hover {

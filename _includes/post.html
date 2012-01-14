@@ -1,8 +1,25 @@
 <div class='post'>
-  <h1><a href='{{page.url}}'>{{post.title}}</a></h1>
+  <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
   <span class='date'>{{post.date | date: "%Y-%m-%d"}}</span> 
   <span>{% include post_categories.html %}</span>
+  <div class="next-prev">
+      {% include post_next_prev.html %}
+  </div>
+  
   <div class='body'>{{ content }}</div>
+  
+  <div class="next-prev">
+      {% include post_next_prev.html %}
+  </div>
+</div>
+
+<div class="related">
+    <h2>相关文章</h2>
+    <ul class="clearfix">  
+        {% for post in site.related_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
 </div>
 
 <script type="text/javascript" charset="utf-8">
