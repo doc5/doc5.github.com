@@ -1,11 +1,12 @@
 <div class='post'>
-  <h1><a href='{{page.url}}'>{{page.title}}</a></h1>
-  <span class='date'>{{page.date | date: "%Y-%m-%d"}}</span>
+  <h1><a href='{{page.url}}'>{{post.title}}</a></h1>
+  <span class='date'>{{post.date | date: "%Y-%m-%d"}}</span> 
+  <span>{% include post_categories.html %}</span>
   <div class='body'>{{ content }}</div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  var disqus_url = "http://happy.doc5.com{{page.url}}";
+  var disqus_url = "http://happy.doc5.com{{post.url}}";
   var disqus_developer = 1;
 </script>
 

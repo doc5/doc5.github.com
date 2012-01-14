@@ -123,7 +123,7 @@ ul {
 
 #main .content .post-list .title {
     font-family: 'Folksolid';
-    font-size: 182%;
+/*    font-size: 182%;*/
     margin-bottom: 4px;
 /*    text-transform: none;*/
 }
@@ -141,10 +141,10 @@ ul {
     font-size: 14px;
 }
 
-#main .content .post-list .reader-more{
-    text-align: right;
+#main .content .post-list .more{
+    float: right;
 }
-#main .content .post-list .reader-more a{
+#main .content .post-list .more a{
     color: #C34E02;
     text-decoration: none;
 }

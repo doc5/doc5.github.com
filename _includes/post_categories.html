@@ -1,0 +1,3 @@
+{% for category in post.categories %}
+    <a href="/{{category | first}}/">{{category | first}}</a>
+{% endfor %}
