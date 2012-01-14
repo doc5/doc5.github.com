@@ -1,7 +1,7 @@
 base-url: /
 destination: ./_site
-#server: true
-#auto: true
+server: true
+auto: true
 #lsi: true
 server_port: 5000
 pygments: true
