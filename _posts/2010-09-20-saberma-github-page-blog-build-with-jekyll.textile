@@ -11,7 +11,7 @@ bq.
 依赖于git，文章原生支持版本控制(对比)，更有利于知识库类文章
 可以使用vim编写文章，写的时候像在写代码，更符合程序员的习惯
 
-本博客此次除了启用全新个人域名saberma.me，将做以下调整
+本博客此次除了启用全新个人域名happy.doc5.com，将做以下调整
 
 bq. 
 美化网站风格，更加的清新:)
@@ -26,8 +26,6 @@ h2. 挑个新的博客模板
 一页一页的挑吧，总会找到自己喜欢的，可以根据右下角的Tag Cloud进行筛选，现在看到本站的新样子就是找好久才看中的模板
 
 h2. 绑定独立域名
-
-在godaddy中注册 "saberma.me":http://saberma.em 域名，.me专用于博客类型，但比.com贵一些，且没有优惠
 
 # 注册完域名后，在域名管理中增加A record并指向207.97.227.245
 # 在你的github项目下增加CNAME文件，内容为你的域名，如 "http://github.com/saberma/saberma.github.com/blob/master/CNAME":http://github.com/saberma/saberma.github.com/blob/master/CNAME
@@ -120,7 +118,7 @@ h2. 整合rss订阅
 
 h2. 你也想弄一个github page博客?
 
-最快的做法是 "fork我的博客":http://github.com/saberma/saberma.github.com ，git clone到你的电脑
+最快的做法是 "fork我的博客":http://github.com/doc5/doc5.github.com ，git clone到你的电脑
 然后修改成你的，具体需要调整的地方是:
 
 # 删除_posts中的文章

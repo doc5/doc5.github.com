@@ -35,9 +35,9 @@ h3. 结合rails
 rails使用to_json返回model，会把model name作为key，如:
 
 pre. 
-{user: {name: 'saberma'}}
+{user: {name: 'happy'}}
 
-而backbone的model只接受 name: 'saberma'
+而backbone的model只接受 name: 'happy'
 
 而不需要使用以下rails全局关闭root
 

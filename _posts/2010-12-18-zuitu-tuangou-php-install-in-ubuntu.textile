@@ -37,8 +37,8 @@ bq.
 如需修改apache webroot黙认路径，请修改/etc/apache2/sites-enabled/000-default文件
 
 pre. 
-#修改目录归属于当前用户saberma
-chown saberma /var/www
+#修改目录归属于当前用户happy
+chown happy /var/www
 #修改目录可写权限
 chmod a+w static/user
 chmod a+w static/team
@@ -95,7 +95,7 @@ exit
 配置ftp地址、用户名及密码
 
 pre. 
-git config git-ftp.user saberma
+git config git-ftp.user happy
 git config git-ftp.url ftp.example.com
 git config git-ftp.password secr3t
 
