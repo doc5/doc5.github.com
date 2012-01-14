@@ -1,0 +1,1 @@
+cd /home/happy/git_root/doc5.github.com && git pull origin develop && jekyll --lsi
