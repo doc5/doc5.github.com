@@ -6,7 +6,8 @@ lsi: true
 server_port: 5000
 pygments: true
 markdown: redcloth
-permalink: pretty
+permalink: 	/archives/:year/:month/:day/:title/
 paginate: 10
 plugins: ./_plugins
+main_domain: happy.doc5.com
 
