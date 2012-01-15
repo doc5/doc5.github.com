@@ -1,31 +1,32 @@
-{% if paginator.total_pages > 1 %}
-<nav class="pagination">
-    
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <span class="prev"><a href="{{ basic_path }}{{ current_root_url }}/" rel="prev">&laquo; 上一页</a></span>
-        {% else %}
-            <span class="prev"><a href="{{ basic_path }}{{ current_root_url }}/page{{paginator.previous_page}}" rel="prev">&laquo; 上一页</a></span>
-        {% endif %}
-    {% endif %}
-    
-    {% for page in (1..paginator.total_pages) %}
-    
-        {% if page == paginator.page %}
-            <span class="page current">{{ page }}</span>
-        {% else %}
-            {% if page == 1 %}
-                <span class="page"><a href="{{ basic_path }}{{ current_root_url }}/">{{ page }}</a></span>
+<div class="pagination">
+     <div class="post-count">
+        {% include post_count.html %}
+     </div>
+    {% if paginator.total_pages > 1 %}
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <span class="prev"><a href="{{ basic_path }}{{ current_root_url }}/" rel="prev">&laquo; 上一页</a></span>
             {% else %}
-                <span class="page"><a href="{{ basic_path }}{{ current_root_url }}/page{{page}}">{{ page }}</a></span>
+                <span class="prev"><a href="{{ basic_path }}{{ current_root_url }}/page{{paginator.previous_page}}" rel="prev">&laquo; 上一页</a></span>
             {% endif %}
         {% endif %}
-    
-    {% endfor %}
 
-    {% if paginator.next_page %}
-        <span class="next"><a href="{{ basic_path }}{{ current_root_url }}/page{{paginator.next_page}}" rel="next">下一页 &raquo;</a></span>
+        {% for page in (1..paginator.total_pages) %}
+
+            {% if page == paginator.page %}
+                <span class="page current">{{ page }}</span>
+            {% else %}
+                {% if page == 1 %}
+                    <span class="page"><a href="{{ basic_path }}{{ current_root_url }}/">{{ page }}</a></span>
+                {% else %}
+                    <span class="page"><a href="{{ basic_path }}{{ current_root_url }}/page{{page}}">{{ page }}</a></span>
+                {% endif %}
+            {% endif %}
+
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <span class="next"><a href="{{ basic_path }}{{ current_root_url }}/page{{paginator.next_page}}" rel="next">下一页 &raquo;</a></span>
+        {% endif %}
     {% endif %}
-    
-</nav>
-{% endif %}
+</div>

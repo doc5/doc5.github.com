@@ -3,6 +3,12 @@ layout: default
 ---
 {% assign posts = paginator.posts %}
 
+<div class="post-tip">   
+    分类:
+    <a href="/{{paginator.category}}/">{{ paginator.category }}</a>
+    文章列表
+</div>
+
 {% include category_paginate.html %}
 {% include posts_list.html %}
 {% include category_paginate.html %}

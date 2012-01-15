@@ -3,6 +3,7 @@ default_author: happy
 default_desc: 快乐的马农，认认真真写博客，乐观的生活！
 default_theme: default
 default_keywords: 程序，代码，马农，快乐，happy，doc5
+assets_version: 2012011501
 ---
 <!doctype html>
 <html lang="en">
@@ -15,9 +16,9 @@ default_keywords: 程序，代码，马农，快乐，happy，doc5
         {% endif %}
         
         {% if page.theme != null %}
-            <link rel="stylesheet" href="/stylesheets/themes/{{ page.theme }}/style.css" type="text/css" media="screen" charset="utf-8"/>
+            <link rel="stylesheet" href="/stylesheets/themes/{{ page.theme }}/style.css?version={{ page.assets_version }}" type="text/css" media="screen" charset="utf-8"/>
         {% else %}
-            <link rel="stylesheet" href="/stylesheets/themes/{{ page.default_theme }}/style.css" type="text/css" media="screen" charset="utf-8"/>
+            <link rel="stylesheet" href="/stylesheets/themes/{{ page.default_theme }}/style.css?version={{ page.assets_version }}" type="text/css" media="screen" charset="utf-8"/>
         {% endif %}
         
         <script src="/javascripts/jquery.min.js"></script>

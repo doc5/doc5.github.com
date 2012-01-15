@@ -119,6 +119,14 @@ ul {
     line-height: 1.5;
 }
 
+#main .content .post-tip {
+    
+}
+
+#main .content .pagination .post-count {
+    float: right;    
+}
+
 #main .content .title h1 {
     font-size: 250%;
 }
@@ -167,6 +175,10 @@ ul {
     border-top: 2px dotted #ccddff;
 }
 
+#main .content .post .body a{
+    color: cadetblue;
+}
+
 #main .content .post .body p {
     text-indent: 2em;
     line-height: 200%;
@@ -174,6 +186,7 @@ ul {
 
 #main .content .next-prev{
     padding: 2px;
+    text-align: center;
 }
 
 #main .content .next-prev a{
