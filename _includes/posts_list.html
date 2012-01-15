@@ -7,8 +7,11 @@
                 <a href="{{ post.url }}" title="点击阅读 - {{ post.title }}">阅读</a>
              </div>
               <span class='date'>{{post.date | date: "%Y-%m-%d"}}</span> 
-              <span>分类:{% include post_categories.html %}</span>
+              
+              {% include post_categories.html %}
               {% include post_tags.html %}
+              {% include post_author.html %}
+              
               <div class='body'>{{ content }}</div>
          </div>    
 

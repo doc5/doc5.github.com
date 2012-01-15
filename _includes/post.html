@@ -2,7 +2,11 @@
     <div class="title text-center">
         <h1>{{post.title}}</h1>
         <span class='date'>{{post.date | date: "%Y-%m-%d"}}</span> 
-        <span>{% include post_categories.html %}</span>
+        
+        {% include post_categories.html %}
+        {% include post_tags.html %}
+        {% include post_author.html %}
+        
     </div>
   
   <div class="next-prev">

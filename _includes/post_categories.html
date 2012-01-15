@@ -1,7 +1,10 @@
-{% if post.categories[0] != null %}
-    {% for category in post.categories %}
-        <a href="/{{category | first}}/">{{category | first}}</a>
-    {% endfor %}
-{% else %}
-    未分类
-{% endif %}
+<span>
+    {% if post.categories[0] != null %}
+        分类:
+        {% for category in post.categories %}
+            <a href="/{{category | first}}/">{{category | first}}</a>
+        {% endfor %}
+    {% else %}
+        未分类
+    {% endif %}
+</span>
