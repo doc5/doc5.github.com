@@ -9,3 +9,4 @@ markdown: redcloth
 permalink: pretty
 paginate: 10
 plugins: ./_plugins
+
