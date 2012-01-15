@@ -31,6 +31,10 @@ ul {
     width: 1024px;
 }
 
+.text-center{
+    text-align: center;
+}
+
 #header {
     background: url("images/header-bk.jpg") repeat scroll 0 0 #2A3B63;
     color: #FFFFFF;
@@ -115,6 +119,10 @@ ul {
     line-height: 1.5;
 }
 
+#main .content .title h1 {
+    font-size: 250%;
+}
+
 #main .content .post-list{
     margin-bottom: 10px;
     padding-bottom: 5px;
@@ -122,11 +130,15 @@ ul {
 }
 
 #main .content .post-list .title {
-    font-family: 'Folksolid';
-/*    font-size: 182%;*/
+    font-family: 'Folksolid';    
     margin-bottom: 4px;
 /*    text-transform: none;*/
 }
+
+#main .content .post-list .title h1 {
+    font-size: 150%;
+}
+
 #main .content .post-list .meta{
     line-height: 22px;
     float: right;
@@ -153,6 +165,11 @@ ul {
     padding: 5px;
     border-bottom: 2px dotted #ccddff;
     border-top: 2px dotted #ccddff;
+}
+
+#main .content .post .body p {
+    text-indent: 2em;
+    line-height: 200%;
 }
 
 #main .content .next-prev{

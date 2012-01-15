@@ -1,0 +1,6 @@
+{% if post.tags[0] != null %}
+    标签:
+    {% for tag in post.tags %}
+        {{tag | first}}
+    {% endfor %}
+{% endif %}

@@ -7,12 +7,17 @@
                 <a href="{{ post.url }}" title="点击阅读 - {{ post.title }}">阅读</a>
              </div>
               <span class='date'>{{post.date | date: "%Y-%m-%d"}}</span> 
-              <span>{% include post_categories.html %}</span>
+              <span>分类:{% include post_categories.html %}</span>
+              {% include post_tags.html %}
               <div class='body'>{{ content }}</div>
          </div>    
 
          <div class="outline">
-             {{ post.outline }}
+             {% if post.outline != null %}
+                {{ post.outline }}
+             {% else %}   
+                {{ post.desc }}
+             {% endif %}
          </div>
     </div>    
 {% endfor %}

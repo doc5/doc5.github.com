@@ -1,3 +1,7 @@
-{% for category in post.categories %}
-    <a href="/{{category | first}}/">{{category | first}}</a>
-{% endfor %}
+{% if post.categories[0] != null %}
+    {% for category in post.categories %}
+        <a href="/{{category | first}}/">{{category | first}}</a>
+    {% endfor %}
+{% else %}
+    未分类
+{% endif %}

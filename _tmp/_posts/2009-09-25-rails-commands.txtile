@@ -51,9 +51,13 @@ end
 </pre>
 
 另外,capture也是个好东西:)
+
+<pre>
 "capture api":http://apidock.com/rails/ActionView/Helpers/CaptureHelper/capture
 "concat api":http://apidock.com/rails/ActionView/Helpers/TextHelper/concat
+</pre>
 
 h2. layout中指定多个yield
-
+<pre>
 "content_for":http://apidock.com/rails/ActionView/Helpers/CaptureHelper/content_for
+</pre>
