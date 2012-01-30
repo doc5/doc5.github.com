@@ -1,8 +1,9 @@
 ---
 default_author: happy
-default_desc: 快乐的马农，认认真真写博客，乐观的生活！
+default_intro: 快乐的生活
+default_desc: 快乐的生活,程序员的每一天,Ruby On Rails,开发,JavaScript
 default_theme: default
-default_keywords: 程序，代码，马农，快乐，happy，doc5
+default_keywords: 程序，代码，马农，快乐，happy，doc5，Ruby，Rails
 assets_version: 2012011501
 ---
 <!doctype html>
@@ -10,9 +11,9 @@ assets_version: 2012011501
     <head>
         <meta charset="utf-8" />
         {% if page.title != null %}
-        <title>{{page.title}} | {{ page.default_desc }} - {{ page.default_author }}</title>
+            <title>{{page.title}} | {{ page.default_intro }} - {{ page.default_author }}</title>
         {% else %}
-        <title>{{ page.default_desc }} - {{ page.default_author }}</title>
+            <title>{{ page.default_intro }} - {{ page.default_author }}</title>
         {% endif %}
         
         {% if page.theme != null %}
@@ -41,7 +42,7 @@ assets_version: 2012011501
                 <div class="description">
                     <h1><a href="{{ site.base-url }}">{{ page.default_author }}</a> Blog</h1>
                     <h2>
-                        <a href="{{ site.base-url }}">{{ page.default_desc }}</a>
+                        <a href="{{ site.base-url }}">{{ page.default_intro }}</a>
                     </h2>
                 </div>
             </div>

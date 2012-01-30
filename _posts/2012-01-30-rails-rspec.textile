@@ -1,0 +1,24 @@
+---  
+author: happy
+layout: post
+title: 用RSpec测试你的Rails程序
+desc: RSpec针对我们Ruby以及Rails的测试工作精心制作了一套独具风味的DSL大餐，让我们来尝尝鲜
+outline: 
+categories:
+    rails
+    learn
+    rspec
+tags:
+---
+<div class='post-div'>
+    <div class='post-it'>
+        <p>
+            RSpec is a framework which provides programmers with a Domain Specific Language to describe the behaviour of
+            Ruby code with readable, executable examples that guide you in the design process and serve well as both
+            documentation and tests. 
+        </p>
+        <p>
+            <a href="http://rubydoc.info/gems/rspec-rails/frames">rspec-rails RDoc</a>
+        </p>
+    </div>
+</div>

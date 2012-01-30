@@ -1,0 +1,21 @@
+---  
+author: happy
+layout: post
+title: 新的一年，新的开始，新的希望，龙年加油
+desc: 过的真快，有是新的一年呀！新的一年，新的开始，新的希望，龙年加油
+outline: 
+categories:
+    live
+tags:
+---
+<div class='post-div'>
+    <p>新的一年要努力加油了哦！</p>
+    <div class='post-it'>
+        <b>努力工作</b>
+        <p>认真学习，努力工作！</p>
+    </div>
+    <div class='post-it'>
+        <b>锻炼身体</b>
+        <p>身体是革命的本钱！</p>
+    </div>
+</div>
