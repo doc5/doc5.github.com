@@ -18,7 +18,7 @@ tags:
             documentation and tests. 
         </p>
         <p>
-            <a href="http://rubydoc.info/gems/rspec-rails/frames">rspec-rails RDoc</a>
+            <a href="http://rubydoc.info/gems/rspec-rails/frames" target='_blank'>rspec-rails RDoc</a>
         </p>
     </div>
 </div>

@@ -10,4 +10,3 @@ permalink: 	/archives/:year/:month/:day/:title/
 paginate: 10
 plugins: ./_plugins
 main_domain: happy.doc5.com
-
