@@ -1,0 +1,49 @@
+---  
+author: happy
+layout: post
+title: tar 压缩与解压缩打包命令
+desc: tar 压缩与解压缩打包命令
+outline: 
+categories:
+    linux
+tags:
+    tar
+    linux
+---
+<div class='post-div'>
+   <div class='post-it'>
+        <p>tar [-cxtzjvfpPN] 文件与目录</p>
+        <p>参数：</p>
+        <p>-c :建立压缩文件的参数命令（creat的意思）</p>
+        <p>-x :解压缩文件的参数命令</p>
+        <p>-t :查看tar包里文件的命令<font color="red">特别注意，在使用参数时,c/x/t只能有一个，不能同时存在</font><br>
+            因为不可能同时压缩与解压缩。</p>
+        <p>-z :是否同时具有gzip的属性，即是否需要用gzip压缩</p>
+        <p>-j :是否同时具有bz2的属性，即是否需要用bzip2压缩（记不住的就是它）</p>
+        <p>-v :压缩过程中显示文件，这个常用，呵基本上我现在每次解压都会看一下里面的文件</p>
+        <p>-f :使用文件名，<font color="red">之后立即加文件名，不能再加别的参数</font></p>
+        <p>-p :使用原文件的原来属性（属性不会根据用户而变），这个从来没用过。。</p>
+        <p>-P :可以使用绝对路径来压缩</p>
+        <p>-N :比后面接的日期（yyyy/mm/dd)还要新的才会被打包进新建的文件中</p>
+        <p>–exclude FILE :在压缩的过程中，不要将FILE打包<br>
+        <span id="more-600"></span><br>
+        呵，基本上我现在常用的四个命令如下：</p>
+        <p>压缩成gzip文件：</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;"><div class="bash codecolorer"><span class="kw2">tar</span> <span class="re5">-zcvf</span> shell.tar.gz shell<span class="sy0">/</span></div></div>
+        <p>将gzip文件解压：</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;"><div class="bash codecolorer"><span class="kw2">tar</span> <span class="re5">-zxvf</span> shell.tar.gz</div></div>
+        <p>压缩为bz2文件：</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;"><div class="bash codecolorer"><span class="kw2">tar</span> <span class="re5">-jcvf</span> shell.tar.bz2 shell<span class="sy0">/</span></div></div>
+        <p>将bz2文件解压：</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;"><div class="bash codecolorer"><span class="kw2">tar</span> <span class="re5">-jxvf</span> shell.tar.bz2</div></div>
+        <p>==============2010.05.26补充============</p>
+        <p>如果只想将文件打成tar包，不做压缩，同样很简单：</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;"><div class="bash codecolorer"><span class="kw2">tar</span> <span class="re5">-cvf</span> shell.tar shell<span class="sy0">/</span></div></div>
+        <p>同样，解压你也就知道了</p>
+        <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;width:600px;">
+            <div class="bash codecolorer">
+               <span class="kw2">tar</span> <span class="re5">-xvf</span> shell.tar
+            </div>
+        </div>
+   </div>
+</div>
